@@ -1,0 +1,28 @@
+{
+  "root": "apps/residential-e2e",
+  "sourceRoot": "apps/residential-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/residential-e2e/cypress.json",
+        "devServerTarget": "residential:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "residential:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/residential-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["residential"]
+}

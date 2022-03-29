@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "residential": "apps/residential",
+    "residential-e2e": "apps/residential-e2e"
+  }
+}
