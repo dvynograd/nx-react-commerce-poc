@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tele2/products/data": ["libs/products/data/src/index.ts"],
+      "@tele2/products/ui": ["libs/products/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

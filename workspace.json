@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "products-data": "libs/products/data",
+    "products-ui": "libs/products/ui",
     "residential": "apps/residential",
     "residential-e2e": "apps/residential-e2e"
   }
